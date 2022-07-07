@@ -15,15 +15,20 @@ namespace C_SharpBasics
 
             //Console.WriteLine(fullName);
 
-            Console.WriteLine("Enter your name: ");
+            Console.WriteLine("Enter Student name: ");
             string name = Console.ReadLine();
 
-            Console.WriteLine("Enter your age: ");
+            Console.WriteLine("Enter Student age: ");
             int age = int.Parse(Console.ReadLine());
 
-           
+            Console.WriteLine("Enter Roll number");
+            int rollno= int.Parse(Console.ReadLine());
 
-            Console.WriteLine($"Age of {name} is {age}");
+            Console.WriteLine("Enter Subject Name"); ;
+            string subject= Console.ReadLine();
+
+
+            Console.WriteLine($"Name of Student is {name} \n Age: {age} \n Roll Number: {rollno} \n Selected subject: {subject}");
 
         }
     }
