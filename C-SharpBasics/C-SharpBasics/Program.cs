@@ -6,7 +6,15 @@ namespace C_SharpBasics
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            // int , string, float, double , char, longint
+
+            var fName = "John";
+            var lName = "Miller";
+
+            var fullName = fName + lName;
+           
+            Console.WriteLine(fullName);
+
         }
     }
 }
