@@ -2,7 +2,7 @@
 
 namespace C_SharpBasics
 {
-    internal class Program
+    public class Program
     {
         static void Main(string[] args)
         {
@@ -14,6 +14,19 @@ namespace C_SharpBasics
             //var fullName = fName + lName;
 
             //Console.WriteLine(fullName);
+
+            // Instantiating the operator class
+            Operators oper = new Operators();
+            oper.age = 30;
+
+            Methods methods = new Methods();
+            methods.PrintMyName();
+            var value = methods.SumOfTwoNumbers();
+            var fullName = methods.GetFullName();
+
+            Console.WriteLine(fullName);
+            Console.WriteLine("Sum of two numbers is: {0}", value);   
+            
 
             Console.WriteLine("Enter Student name: ");
             string name = Console.ReadLine();
@@ -33,3 +46,16 @@ namespace C_SharpBasics
         }
     }
 }
+
+
+
+
+/*
+ 
+ int age;
+string name;
+ Car car;
+
+
+ 
+ */
