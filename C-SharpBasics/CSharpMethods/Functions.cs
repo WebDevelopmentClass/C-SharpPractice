@@ -7,11 +7,11 @@ namespace CSharpMethods
     internal class Functions
     {
         public int SumofTwoNumber(int a, int b)
-            {
-           
-                return a+b;
+        {
 
-            }
+            return a + b;
+
+        }
 
     }
 }
