@@ -6,7 +6,7 @@ namespace C_SharpBasics
     {
         static void Main(string[] args)
         {
-            // int , string, float, double , char, longint
+            // int , string, float, double , char, longint, bool
 
             //var fName = "John";
             //var lName = "Miller";
@@ -18,9 +18,20 @@ namespace C_SharpBasics
             // Instantiating the operator class
 
 
-            int c = 2 + 2*2 / 2 - 2;
-            Console.WriteLine(c);
-          
+            //int c = 2 + 2*2 / 2 - 2;
+            //Console.WriteLine(c);
+             Conditional conditional = new Conditional();
+             var checkAge = conditional.CheckAge(10);
+
+            if (checkAge)
+            {
+                Console.WriteLine("User is eligible for vote");
+            }
+            else
+            {
+                Console.WriteLine("User is under age");
+            }
+
             //Operators oper = new Operators();
             //oper.age = 30;
 
