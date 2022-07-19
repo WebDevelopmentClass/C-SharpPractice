@@ -20,18 +20,17 @@ namespace C_SharpBasics
 
             //int c = 2 + 2*2 / 2 - 2;
             //Console.WriteLine(c);
+
+            // Ternary Operator for conditonal Statement
+
+
+
              Conditional conditional = new Conditional();
              var checkAge = conditional.CheckAge(10);
 
-            if (checkAge)
-            {
-                Console.WriteLine("User is eligible for vote");
-            }
-            else
-            {
-                Console.WriteLine("User is under age");
-            }
+            string message = checkAge  ? "USer is eligible for drink" : "User is not eligible for drink";
 
+            Console.WriteLine(message);
             //Operators oper = new Operators();
             //oper.age = 30;
 
