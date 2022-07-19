@@ -13,5 +13,11 @@ namespace CSharpMethods
 
         }
 
+        public double AreaofTriangle(double triangleBase, double triangleHeight)
+        {
+            return (triangleBase * triangleHeight) / 2;
+
+        }
+
     }
 }
