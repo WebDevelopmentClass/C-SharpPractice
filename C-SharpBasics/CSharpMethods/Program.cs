@@ -6,6 +6,10 @@ namespace CSharpMethods
     {
         static void Main()
         {
+
+            // Operators + , _ , / , % , *
+            // BODMAS
+            // 2+2 (3*4)
             int a;
             int b;
 
@@ -18,6 +22,7 @@ namespace CSharpMethods
             b = int.Parse(Console.ReadLine());
 
             Console.WriteLine("\nThe sum of two numbers is : {0} \n", function.SumofTwoNumber(a, b));
+
             // Area of Triangle 
             Console.WriteLine("Enter the base of triangle: ");
             double triangleBase = Convert.ToDouble(Console.ReadLine());
