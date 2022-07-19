@@ -21,14 +21,28 @@ namespace C_SharpBasics
             {
                 return true;
             }
-            else if(age > 30)
+            else if (age > 30)
             {
                 return true;
             }
             else
             {
-                return false;   
+                return false;
             }
         }
+
+        public bool CheckMarks(int fullMarks, int passMarks)
+        {
+            if (fullMarks == 100 || passMarks == 33)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        // char if char == 'a' || char == 'A' char == 'e' a A
     }
 }

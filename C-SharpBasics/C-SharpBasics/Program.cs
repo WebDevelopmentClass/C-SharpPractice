@@ -31,6 +31,7 @@ namespace C_SharpBasics
             string message = checkAge  ? "USer is eligible for drink" : "User is not eligible for drink";
 
             Console.WriteLine(message);
+            conditional.CheckMarks(100,34);
             //Operators oper = new Operators();
             //oper.age = 30;
 
