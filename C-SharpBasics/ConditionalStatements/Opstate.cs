@@ -6,7 +6,7 @@ namespace ConditionalStatements
 {
     internal class Opstate
     {
-        public bool ConditionalSate( int a)
+        public bool ConditionalState(char a)
         {
 
             if (a == 'a' || a == 'A' || a == 'e' || a =='E' || a == 'i' || a == 'I' || a == 'o' || a == 'O' || a == 'u' || a == 'U')

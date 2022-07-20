@@ -10,7 +10,7 @@ namespace ConditionalStatements
             Console.WriteLine("Enter any Character:");
             Char a = char.Parse(Console.ReadLine());
 
-            var Checkchar = opstate.ConditionalSate(a);
+            var Checkchar = opstate.ConditionalState(a);
 
             string message = Checkchar ? "Entered Character is Vowel" : "Entered Character is Consonant";
 
