@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "C-SharpBasics", "C-SharpBas
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpMethods", "CSharpMethods\CSharpMethods.csproj", "{3B6EA782-02D5-4F49-AAD0-7E9B459FB924}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConditionalStatements", "ConditionalStatements\ConditionalStatements.csproj", "{D8A05940-1A45-44DC-ADA5-66F06B88C940}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{3B6EA782-02D5-4F49-AAD0-7E9B459FB924}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3B6EA782-02D5-4F49-AAD0-7E9B459FB924}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3B6EA782-02D5-4F49-AAD0-7E9B459FB924}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8A05940-1A45-44DC-ADA5-66F06B88C940}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8A05940-1A45-44DC-ADA5-66F06B88C940}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8A05940-1A45-44DC-ADA5-66F06B88C940}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8A05940-1A45-44DC-ADA5-66F06B88C940}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
