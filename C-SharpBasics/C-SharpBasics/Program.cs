@@ -25,13 +25,13 @@ namespace C_SharpBasics
 
 
 
-             Conditional conditional = new Conditional();
-             var checkAge = conditional.CheckAge(10);
+            // Conditional conditional = new Conditional();
+            // var checkAge = conditional.CheckAge(10);
 
-            string message = checkAge  ? "USer is eligible for drink" : "User is not eligible for drink";
+            //string message = checkAge  ? "USer is eligible for drink" : "User is not eligible for drink";
 
-            Console.WriteLine(message);
-            conditional.CheckMarks(100,34);
+            //Console.WriteLine(message);
+            //conditional.CheckMarks(100,34);
             //Operators oper = new Operators();
             //oper.age = 30;
 
@@ -42,7 +42,7 @@ namespace C_SharpBasics
 
             //Console.WriteLine(fullName);
             //Console.WriteLine("Sum of two numbers is: {0}", value);   
-            
+
 
             //Console.WriteLine("Enter Student name: ");
             //string name = Console.ReadLine();
@@ -58,6 +58,24 @@ namespace C_SharpBasics
 
 
             //Console.WriteLine($"Name of Student is {name} \n Age: {age} \n Roll Number: {rollno} \n Selected subject: {subject}");
+
+
+
+            Console.WriteLine("Enter two numbers: ");
+            int firstNumber = int.Parse(Console.ReadLine());
+            int secondNumber = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Select any operator '+', '-', '*', '/'");
+            char operation = char.Parse(Console.ReadLine());
+
+
+            SwitchCase sc = new SwitchCase();
+
+            var result = sc.SwitchCaseOperations(firstNumber, secondNumber, operation);
+
+            // Result of Sum is 50
+            Console.WriteLine($"Result of {operation} is {result}");
+
 
         }
     }
