@@ -59,7 +59,7 @@ namespace C_SharpBasics
 
             //Console.WriteLine($"Name of Student is {name} \n Age: {age} \n Roll Number: {rollno} \n Selected subject: {subject}");
 
-
+            SwitchCase sc = new SwitchCase();
 
             Console.WriteLine("Enter two numbers: ");
             int firstNumber = int.Parse(Console.ReadLine());
@@ -67,14 +67,14 @@ namespace C_SharpBasics
 
             Console.WriteLine("Select any operator '+', '-', '*', '/'");
             char operation = char.Parse(Console.ReadLine());
+            var ops = sc.SwitchCaseOperator(operation);
 
-
-            SwitchCase sc = new SwitchCase();
+          
 
             var result = sc.SwitchCaseOperations(firstNumber, secondNumber, operation);
-
+          
             // Result of Sum is 50
-            Console.WriteLine($"Result of {operation} is {result}");
+            Console.WriteLine($"Result of {ops} is {result}");
 
 
         }

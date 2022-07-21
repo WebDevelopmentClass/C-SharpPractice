@@ -51,5 +51,25 @@ namespace C_SharpBasics
         {
             return a / b;
         }
+        public string SwitchCaseOperator(char operations)
+        {
+            switch (operations)
+            {
+                case '+':
+                    return "Sum";
+                case '-':
+                    return "Subtraction";
+
+                case '*':
+                    return "Multiplication";
+
+                case '/':
+                    return "Division";
+
+                default:
+                    return "Invalid operation";
+            }
+        }
+
     }
 }
