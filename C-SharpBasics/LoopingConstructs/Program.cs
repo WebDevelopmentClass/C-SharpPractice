@@ -6,7 +6,9 @@ namespace LoopingConstructs
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Learning Array");
+            ArrayLesson array = new ArrayLesson();
+            array.ArrayProg();
         }
     }
 }
