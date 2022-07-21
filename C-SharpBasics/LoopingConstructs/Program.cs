@@ -7,8 +7,11 @@ namespace LoopingConstructs
         static void Main(string[] args)
         {
             Console.WriteLine("Learning Array");
-            ArrayLesson array = new ArrayLesson();
-            array.ArrayProg();
+            //ArrayLesson array = new ArrayLesson();
+            //array.ArrayProg();
+
+            ForLoop loop = new ForLoop();
+            loop.ForeachLoop();
         }
     }
 }
