@@ -70,7 +70,6 @@ namespace C_SharpBasics
             var ops = sc.SwitchCaseOperator(operation);
 
           
-
             var result = sc.SwitchCaseOperations(firstNumber, secondNumber, operation);
           
             // Result of Sum is 50
