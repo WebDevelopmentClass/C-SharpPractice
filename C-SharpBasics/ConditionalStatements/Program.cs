@@ -6,7 +6,7 @@ namespace ConditionalStatements
     {
         static void Main(string[] args)
         {
-            Opstate opstate = new Opstate();
+            //Opstate opstate = new Opstate();
             //Console.WriteLine("Enter any Character:");
             //Char a = char.Parse(Console.ReadLine());
 
@@ -23,10 +23,26 @@ namespace ConditionalStatements
             //int c = int.Parse(Console.ReadLine());
 
             //int message = opstate.MaxThreeNumbers(a, b, c); 
+            // Statement which does not follow some rules
             //Console.WriteLine("Largest number is {0}",message);
-            int a = opstate.SumofNaturalNumbers();
 
-            Console.WriteLine("Sum of first 10 natural numbers is {0}", a);            
+            //string name = "Harman";
+            //Console.Write(int.Parse(name));
+
+            int num1 = 5;
+            int num2 = 5;
+            string number = "5";
+            string number2 = "5";
+
+            Console.WriteLine(num1+num2);
+            Console.WriteLine(number + number2);
+
+            Console.WriteLine(num1 + number2);
+
+
+            //int a = opstate.SumofNaturalNumbers();
+
+            //Console.WriteLine("Sum of first 10 natural numbers is {0}", a);            
         }
     }
 }
