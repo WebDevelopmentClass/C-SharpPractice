@@ -6,7 +6,10 @@ namespace C_SharpBasics
     {
         static void Main(string[] args)
         {
-            // int , string, float, double , char, longint, bool
+            // int , string, float, double , char, longint, bool 
+            // Valued Type (int , float , bool double) and Referenced Type
+            int number = null;
+            string name = null;
 
             //var fName = "John";
             //var lName = "Miller";
