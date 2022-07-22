@@ -29,18 +29,18 @@ namespace ConditionalStatements
             //string name = "Harman";
             //Console.Write(int.Parse(name));
 
-            int num1 = 5;
-            int num2 = 5;
-            string number = "5";
-            string number2 = "5";
+            //int num1 = 5;
+            //int num2 = 5;
+            //string number = "5";
+            //string number2 = "5";
 
-            //Boxing
-            var aa = num1.ToString();
+            ////Boxing
+            //var aa = num1.ToString();
 
-            Console.WriteLine(num1+num2);
-            Console.WriteLine(number + number2);
+            //Console.WriteLine(num1+num2);
+            //Console.WriteLine(number + number2);
 
-            Console.WriteLine(num1 + number2);
+            //Console.WriteLine(num1 + number2);
 
 
             //int a = opstate.SumofNaturalNumbers();
