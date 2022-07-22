@@ -8,7 +8,7 @@ namespace C_SharpBasics
         {
             // int , string, float, double , char, longint, bool 
             // Valued Type (int , float , bool double) and Referenced Type
-            int number = null;
+            //int number = null;
             string name = null;
 
             //var fName = "John";
