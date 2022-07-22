@@ -17,14 +17,16 @@ namespace ConditionalStatements
             //Console.WriteLine(message);
 
 
-            Console.WriteLine("Enter any three number:");
-            int a = int.Parse(Console.ReadLine());
-            int b =int.Parse(Console.ReadLine());
-            int c = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Enter any three number:");
+            //int a = int.Parse(Console.ReadLine());
+            //int b =int.Parse(Console.ReadLine());
+            //int c = int.Parse(Console.ReadLine());
 
-            int message = opstate.MaxThreeNumbers(a, b, c); 
-            Console.WriteLine("Largest number is {0}",message);
-            
+            //int message = opstate.MaxThreeNumbers(a, b, c); 
+            //Console.WriteLine("Largest number is {0}",message);
+            int a = opstate.SumofNaturalNumbers();
+
+            Console.WriteLine("Sum of first 10 natural numbers is {0}", a);            
         }
     }
 }
