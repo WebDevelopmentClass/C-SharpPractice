@@ -26,8 +26,18 @@ namespace ConditionalStatements
             // Statement which does not follow some rules
             //Console.WriteLine("Largest number is {0}",message);
 
-            //string name = "Harman";
-            //Console.Write(int.Parse(name));
+            try
+            {
+                string name = "Harman";
+                Console.Write(int.Parse(name));
+            }
+            catch (Exception ex)
+            {
+
+                Console.WriteLine(ex.Message);
+                Console.WriteLine(ex.StackTrace);
+            }
+
 
             //int num1 = 5;
             //int num2 = 5;
@@ -47,5 +57,6 @@ namespace ConditionalStatements
 
             //Console.WriteLine("Sum of first 10 natural numbers is {0}", a);            
         }
+
     }
 }
