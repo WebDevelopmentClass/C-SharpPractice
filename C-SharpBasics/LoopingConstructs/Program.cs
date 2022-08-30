@@ -8,39 +8,65 @@ namespace LoopingConstructs
         static void Main(string[] args)
         {
 
-
+            // Mocking 
             List<Subject> subjects = new List<Subject>
             {
+
+            };
+
+            List<Student> students = new List<Student>
+            {
+                new Student
+                { Id = 1, Name= "Harman Kaur", Age = 25, RollNumber = 1, Subjects = new List<Subject>
+                {
                  new Subject{ SubjectCode = 101,SubjectName= "SCIENCE", SubjectType="SCI-FI"},
                  new Subject{ SubjectCode = 102,SubjectName= "HINDI", SubjectType="LIT"},
                  new Subject{ SubjectCode = 103,SubjectName= "ENGLISH", SubjectType="ENG"},
-                 new Subject{ SubjectCode = 104,SubjectName= "LITERATURE", SubjectType="LIT"},
+                 new Subject{ SubjectCode = 104,SubjectName= "LITERATURE", SubjectType="LIT"}
+                }
+                },
+                new Student
+                {
+ Id = 1, Name= "Harman Kaur", Age = 25, RollNumber = 1, Subjects = new List<Subject>
+                {
+                 new Subject{ SubjectCode = 101,SubjectName= "SCIENCE", SubjectType="SCI-FI"},
+                 new Subject{ SubjectCode = 102,SubjectName= "HINDI", SubjectType="LIT"},
+                 new Subject{ SubjectCode = 103,SubjectName= "ENGLISH", SubjectType="ENG"},
+                 new Subject{ SubjectCode = 104,SubjectName= "LITERATURE", SubjectType="LIT"}
+                }
+                }
             };
 
-            List<Student> students = new List<Student> { new Student { Name = } }
+            Standard std = new Standard();
+            std.Standards = "Btech.";
+            std.Students = students;
 
-            List<City> cities = new List<City>();
+            Console.WriteLine(std.Standards);
 
-            Student student = new Student();
-            student.Name = "Harman Kaur";
-            student.Age = 25;
-            student.RollNumber = 1;
-          //  student.Standard = "Btech";
-            student.Subjects = subjects;
-
-
-
-            Console.WriteLine($"Name Of Student is: {student.Name}");
-            Console.WriteLine($"Age Of Student is: {student.Age}");
-            Console.WriteLine($"Roll Of Student is: {student.RollNumber}");
-            //Console.WriteLine($"Standard Of Student is: {student.Standard}");
-            foreach (var item in student.Subjects)
+            foreach (var item in students)
             {
-                Console.WriteLine($"\t\t Subject Code is {item.SubjectCode}");
-                Console.WriteLine($"\t\t Subject Code is {item.SubjectName}");
-                Console.WriteLine($"\t\t Subject Code is {item.SubjectType}");
-                Console.WriteLine($"\n");
+                Console.WriteLine($"Name Of Student is: {item.Name}");
+                Console.WriteLine($"Age Of Student is: {item.Age}");
+                Console.WriteLine($"Roll Of Student is: {item.RollNumber}");
+                foreach (var sub in item.Subjects)
+                {
+                    Console.WriteLine($"\t\t Subject Code is {sub.SubjectCode}");
+                    Console.WriteLine($"\t\t Subject Code is {sub.SubjectName}");
+                    Console.WriteLine($"\t\t Subject Code is {sub.SubjectType}");
+                    Console.WriteLine($"\n");
+                }
             }
+
+
+
+            //Console.WriteLine($"Standard Of Student is: {student.Standard}");
+            //foreach (var item in student.Subjects)
+            //{
+            //    Console.WriteLine($"\t\t Subject Code is {item.SubjectCode}");
+            //    Console.WriteLine($"\t\t Subject Code is {item.SubjectName}");
+            //    Console.WriteLine($"\t\t Subject Code is {item.SubjectType}");
+            //    Console.WriteLine($"\n");
+            //}
             //ReadProperties();
             //Snumber();
 
