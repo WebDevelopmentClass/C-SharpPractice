@@ -78,14 +78,21 @@ namespace LoopingConstructs
             {
                 new Standard
                 {
-                      Standards= "Msc", Students= new List<Student>
+                      Standards= "Msc",
+                      Students= new List<Student>
                       {
-                        new Student {
-                                     Id= 100, Name = "Norman", Age = 35, RollNumber= 10, Subjects = new List<Subject>
-                                     { new Subject { SubjectCode = 101, SubjectName = "ASP.Net", SubjectType= "JBL-ASP"}
-
-
-                        }
+                        new Student
+                        {
+                                     Id= 100,
+                                     Name = "Norman",
+                                     Age = 35,
+                                     RollNumber= 10,
+                                     Subjects = new List<Subject>
+                                     {
+                                         new Subject { SubjectCode = 101, SubjectName = "ASP.Net", SubjectType= "JBL-ASP"},
+                                         new Subject { SubjectCode = 101, SubjectName = "ASP.Net", SubjectType= "JBL-ASP"},
+                                         new Subject { SubjectCode = 101, SubjectName = "ASP.Net", SubjectType= "JBL-ASP"}
+                                     }
                         },
                         new Student
                         {
@@ -94,6 +101,7 @@ namespace LoopingConstructs
                           }
                         }
                       }
+                     
                 },
 
                 new Standard
@@ -110,12 +118,20 @@ namespace LoopingConstructs
 
                 }
             };
-            Standard std = new Standard();
-            std.Students = Students;
+         
 
-            foreach ( var stds in Students)
+
+            foreach (var stds in standard)
             {
-                Console.WriteLine($"Student Standard:{std.id}");
+                Console.WriteLine($"Student Standard:{stds.Standards}");
+                foreach (var item in stds.Students)
+                {
+                    Console.WriteLine($"Student Standard:{item.Name}");
+                    foreach (var sub in item.Subjects)
+                    {
+                        Console.WriteLine($"Student Standard:{sub.SubjectName}");
+                    }
+                }
             }
 
             //Console.WriteLine($"Standard Of Student is: {student.Standard}");
